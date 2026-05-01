@@ -138,8 +138,8 @@ export function Contact() {
             data-anim="lede"
             className="max-w-xl text-lg text-muted-foreground"
           >
-            Press, partnerships, athletes, or just want to say hey? Drop us a
-            line.
+            Press, partnerships, athletes, or just want to say hey? We&rsquo;d
+            love to hear from you.
           </p>
           <div data-anim="cta" className="inline-block max-w-full">
             <Button

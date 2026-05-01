@@ -84,17 +84,16 @@ export function About() {
       <Section
         id="about"
         eyebrow="About"
-        title="Built for the riders who"
+        title="Built for those who"
         titleAccent="send it."
       >
         <p
           data-anim="body"
           className="max-w-2xl text-lg leading-relaxed text-muted-foreground sm:text-xl"
         >
-          JerrySki is building affordable ski and snowboard gear and a community
-          for beginners, riders, and future extreme sports athletes. No
-          gatekeeping, no inflated price tags &mdash; just gear that gets you
-          out there.
+          We&rsquo;re making ski and snowboard gear that doesn&rsquo;t cost a
+          fortune. First-timer or full sender, you should be on the mountain
+          &mdash; not stuck staring at price tags.
         </p>
       </Section>
     </div>

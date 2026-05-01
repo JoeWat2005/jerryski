@@ -44,15 +44,6 @@ export function Hero() {
         ease: "power1.inOut",
       });
 
-      gsap.to("[data-hero='glow']", {
-        scale: 1.15,
-        opacity: 0.85,
-        duration: 5,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-      });
-
       gsap.to("[data-hero='scroll-dot']", {
         y: 8,
         repeat: -1,
@@ -67,17 +58,9 @@ export function Hero() {
   return (
     <section
       ref={root}
-      className="relative flex h-[100svh] min-h-[640px] w-full flex-col items-center justify-center overflow-hidden bg-background px-4 pt-10 pb-24 sm:px-6"
+      className="relative isolate flex h-[100svh] min-h-[640px] w-full flex-col items-center justify-center overflow-hidden bg-background px-4 pt-10 pb-24 sm:px-6"
     >
-      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 bg-grid opacity-50" />
-
       <Snowfall />
-
-      <div
-        data-hero="glow"
-        aria-hidden
-        className="pointer-events-none absolute top-1/3 left-1/2 -z-10 h-[55vmin] w-[55vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/20 blur-3xl"
-      />
 
       <div className="flex w-full max-w-7xl flex-1 flex-col items-center justify-center gap-6 text-center sm:gap-8">
         <div
@@ -109,8 +92,8 @@ export function Hero() {
           data-hero="desc"
           className="max-w-xl text-balance text-base text-muted-foreground sm:text-lg"
         >
-          Affordable ski and snowboard gear, built for beginners, riders, and
-          the next generation of extreme sports athletes.
+          Ski and snowboard gear that doesn&rsquo;t cost a fortune. For
+          everyone who&rsquo;d rather be on the mountain.
         </p>
       </div>
 

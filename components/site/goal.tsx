@@ -13,15 +13,15 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 const GOALS = [
   {
     title: "Make snow sports accessible",
-    body: "Quality gear without the premium-brand markup. Snow days for everyone.",
+    body: "Good gear shouldn’t cost a paycheck. Snow days are for everyone.",
   },
   {
-    title: "Support rising athletes",
-    body: "Backing the next wave of skiers and snowboarders chasing their first sponsorship.",
+    title: "Back the next generation",
+    body: "We’re backing the riders chasing their first sponsorship. You bring the talent, we’ve got your back.",
   },
   {
-    title: "Build a disruptive brand",
-    body: "Fun, loud, and unapologetically action-sports. Made by Jerrys, for Jerrys.",
+    title: "Have some fun",
+    body: "Loud, playful, all in. Made by Jerrys, for Jerrys.",
   },
 ] as const;
 
@@ -95,7 +95,7 @@ export function Goal() {
       <Section
         id="goal"
         eyebrow="Goal"
-        title="The mission is"
+        title="Our mission is"
         titleAccent="simple."
       >
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-3">
