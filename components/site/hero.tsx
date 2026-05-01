@@ -14,6 +14,8 @@ export function Hero() {
 
   useGSAP(
     () => {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
       const tl = gsap.timeline({
         defaults: { ease: "power3.out", duration: 0.9 },
       });

@@ -58,6 +58,7 @@ export function Socials() {
     () => {
       const ctx = root.current;
       if (!ctx) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
       // "Follow the ride." — words sweep left→right (the lead);
       // the social pill rockets in right→left (the pack following).

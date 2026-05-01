@@ -36,6 +36,7 @@ export function Contact() {
     () => {
       const ctx = root.current;
       if (!ctx) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
       // "Get in touch." — words converge from outside toward center, then the button taps in.
       const tl = gsap.timeline({ paused: true });
@@ -125,6 +126,23 @@ export function Contact() {
         invalidateOnRefresh: true,
         onEnter: playIfFresh,
         onEnterBack: playIfFresh,
+      });
+
+      // Pause the buzzing whenever the section is fully off-screen
+      // so it doesn't burn CPU while the user is reading other parts.
+      ScrollTrigger.create({
+        trigger: ctx,
+        start: "top bottom",
+        end: "bottom top",
+        onToggle: (self) => {
+          if (!shakeRef.current) return;
+          if (self.isActive) {
+            // Only resume if the section's already played its entrance
+            if (hasFiredRef.current) shakeRef.current.resume();
+          } else {
+            shakeRef.current.pause();
+          }
+        },
       });
     },
     { scope: root }

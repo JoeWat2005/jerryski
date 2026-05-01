@@ -36,6 +36,7 @@ export function Goal() {
     () => {
       const ctx = root.current;
       if (!ctx) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
       // "Simple." — clean and snappy. No bounce, no rotation.
       const tl = gsap.timeline({ paused: true });

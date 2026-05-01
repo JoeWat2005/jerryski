@@ -22,6 +22,7 @@ export function About() {
     () => {
       const ctx = root.current;
       if (!ctx) return;
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
       // "Send it." — words slam in from the right with momentum.
       const tl = gsap.timeline({ paused: true });

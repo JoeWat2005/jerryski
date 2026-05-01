@@ -14,12 +14,12 @@ const geistMono = Geist_Mono({
 
 const SITE_URL = "https://jerryski.com";
 const SITE_DESCRIPTION =
-  "JerrySki is building affordable ski and snowboard gear for beginners, riders, and future extreme sports athletes.";
+  "Building affordable ski and snowboard gear for beginners, riders, and future extreme sports athletes.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "JerrySki | Coming Soon",
+    default: "JerrySki | Launching Soon",
     template: "%s | JerrySki",
   },
   description: SITE_DESCRIPTION,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "JerrySki | Coming Soon",
+    title: "JerrySki | Launching Soon",
     description: SITE_DESCRIPTION,
     creator: "@jerryski",
   },
