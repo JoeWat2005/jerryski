@@ -1,3 +1,6 @@
+> [!WARNING]
+> **Deprecated: no longer maintained.** Last updated in May 2026; kept for reference.
+
 # JerrySki
 
 Pre-launch landing page for JerrySki, a brand building affordable ski and snowboard gear, built with Next.js, Tailwind CSS and GSAP.
